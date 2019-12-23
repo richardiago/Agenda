@@ -1,56 +1,50 @@
 package agenda.Agenda.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
-imp
 
 @Entity
 public class Usuario {
 
     @Id
-    
+    @GeneratedValue
+    private Long id;
 
-    vate long id;
-    e String no
+    private String nome;
+    private String email;
+    private Long telefone;
 
-    
-    
-
-    void 
-
-    etId(long id) {
-		this.id = id;
-	}
-	publ
-
-    	return nome;
-	}
-	public void setNome(String nome) {
-		
-
+    public Long getId() {
+        return id;
     }
-        ublic Long  turn 
 
-        ublic void setTe
-    	
-
+    public void setId(Long id) {
+        this.id = id;
     }
-        ublic String getEmail() {
-    	
 
+    public String getNome() {
+        return nome;
     }
-        ublic void se
-    	
 
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-        ublic String getEnd
-    	
 
+    public String getEmail() {
+        return email;
     }
-        ublic void setEn
-    	
 
+    public void setEmail(String email) {
+        this.email = email;
     }
-        
-    
+
+    public Long getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(Long telefone) {
+        this.telefone = telefone;
+    }
+
+}

@@ -1,38 +1,50 @@
 package agenda.Agenda.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 @Entity
 public class Contato {
 
     @Id
-        @GeneratedValue
+    @GeneratedValue
     private Long id;
 
-    vate String email;
-    e String senha;
+    private String nome;
+    private String email;
+    private String senha;
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-    Strin
-     getNo
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    l
-    ome = nome;
+    public String getNome() {
+        return nome;
+    }
 
-    t
-    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-    
-    String getSenha() {
+    public String getEmail() {
+        return email;
+    }
 
-    lenha 
-     senha;
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-    
-     
-    
+    public String getSenha() {
+        return senha;
+    }
 
-    
-        
-    
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+}
