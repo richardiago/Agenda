@@ -1,19 +1,34 @@
 package agenda.Agenda.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Usuario {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
+    @Column(name = "username", unique = true, nullable = false)
+    private String username;
+
+    @Column(name = "email", unique = true, nullable = false)
     private String email;
+
+    @Column(name = "telefone", nullable = false)
     private Long telefone;
+
+    @OneToMany(mappedBy = "usuario", targetEntity = Contato.class, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Contato> lista_contatos;
 
     public Long getId() {
         return id;
@@ -23,12 +38,12 @@ public class Usuario {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getUsernome() {
+        return username;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
