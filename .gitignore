@@ -6,6 +6,8 @@
 # Compiled class file
 *.class
 
+
+
 # Log file
 *.log
 
@@ -48,6 +50,8 @@ nbdist/
 !.vscode/launch.json
 !.vscode/extensions.json
 
+backend/.settings/
+
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
@@ -60,6 +64,8 @@ gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
 # Cache of project
 .gradletasknamecache
@@ -69,5 +75,10 @@ gradle-app.setting
 
 ### Gradle Patch ###
 **/build/
+
+bin
+
+# Node
+node_modules 
 
 # End of https://www.gitignore.io/api/java,gradle,java-web,netbeans,visualstudiocode
