@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Usuario {
@@ -24,8 +25,9 @@ public class Usuario {
     @Column(name = "email", unique = true, nullable = false)
     private String email;
 
-    @Column(name = "telefone", nullable = false)
-    private Long telefone;
+    @Column(name = "senha", nullable = false)
+    @Size(min = 6)
+    private String senha;
 
     @OneToMany(mappedBy = "usuario", targetEntity = Contato.class, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Contato> lista_contatos;
@@ -38,7 +40,7 @@ public class Usuario {
         this.id = id;
     }
 
-    public String getUsernome() {
+    public String getUsername() {
         return username;
     }
 
@@ -54,12 +56,12 @@ public class Usuario {
         this.email = email;
     }
 
-    public Long getTelefone() {
-        return telefone;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setTelefone(Long telefone) {
-        this.telefone = telefone;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
 }

@@ -7,7 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.Size;
 
 @Entity
 public class Contato {
@@ -22,9 +21,8 @@ public class Contato {
     @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "senha", nullable = false)
-    @Size(min = 6)
-    private String senha;
+    @Column(name = "telefone", nullable = false)
+    private Long telefone;
 
     @ManyToOne
     @JoinColumn(name = "usuario_id")
@@ -54,12 +52,12 @@ public class Contato {
         this.email = email;
     }
 
-    public String getSenha() {
-        return senha;
+    public Long getTelefone() {
+        return telefone;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setTelefone(Long telefone) {
+        this.telefone = telefone;
     }
 
 }
