@@ -51,6 +51,7 @@ nbdist/
 !.vscode/extensions.json
 
 backend/.settings/
+backend/.classpath
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
