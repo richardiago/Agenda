@@ -1,4 +1,4 @@
-package agenda.Agenda.model;
+package agenda.Agenda.model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
