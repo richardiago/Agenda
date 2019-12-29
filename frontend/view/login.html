@@ -1,68 +1,30 @@
-<!doctype html>
-<html lang="pt">
+<!-- Container principal -->
+<div class="container">
+    <div class="box login">
+        <!-- Formulário -->
+        <form>
+            <div class="form-group">
 
-<head>
-    <title>Agenda - Login</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-
-    <!-- Bootstrap JS -->
-    <script src="../js/lib/bootstrap.min.js"></script>
-
-    <!-- Angular JS -->
-    <script src="../js/lib/angular.min.js"></script>
-
-
-    <!-- JQuery JS -->
-    <script src="../js/lib/jquery-3.3.1.min.js"></script>
-
-    <!-- Nossos CSS -->
-    <link rel="stylesheet" href="../css/common.css">
-
-    <!-- Nossos Scripts -->
-
-
-</head>
-
-<!-- margem -->
-
-<body class="m-5">
-
-    <!-- Container principal -->
-    <div class="container">
-        <div class="box login">
-            <!-- Formulário -->
-            <form>
-                <div class="form-group">
-
-                    <div class="form-row">
-                        <div class="col">
-                            <label>Usuário</label>
-                            <input class="form-control" name="username" type="text" id="usuario" autofocus required
-                                placeholder="Digite seu username" size="10">
-                        </div>
-                    </div>
-
-                    <br />
-
-                    <div class="form-row">
-
-                        <div class="col">
-                            <label>Senha</label>
-                            <input class="form-control" name="senha" type="password" id="senha" autofocus required
-                                placeholder="Digite sua senha" minlength="6" size="10">
-                        </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Usuário</label>
+                        <input class="form-control" name="username" type="text" id="usuario" autofocus required
+                            placeholder="Digite seu username" size="10">
                     </div>
                 </div>
-                <input type="submit" class="btn btn-primary" value="Entrar">
-            </form>
-        </div>
 
+                <br />
 
+                <div class="form-row">
 
+                    <div class="col">
+                        <label>Senha</label>
+                        <input class="form-control" name="senha" type="password" id="senha" autofocus required
+                            placeholder="Digite sua senha" minlength="6" size="10">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Entrar">
+        </form>
     </div>
-
-</body>
-
-</html>
+</div>
