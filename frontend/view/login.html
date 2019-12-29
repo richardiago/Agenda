@@ -2,7 +2,7 @@
 <html lang="pt">
 
 <head>
-    <title>Agenda</title>
+    <title>Agenda - Login</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -18,7 +18,7 @@
     <script src="../js/lib/jquery-3.3.1.min.js"></script>
 
     <!-- Nossos CSS -->
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="../css/common.css">
 
     <!-- Nossos Scripts -->
 
@@ -31,16 +31,16 @@
 
     <!-- Container principal -->
     <div class="container">
-        <div class="box">
+        <div class="box login">
             <!-- Formulário -->
             <form>
                 <div class="form-group">
 
                     <div class="form-row">
-                        <div class="col-2">
-                            <label>Username</label>
-                            <input class="form-control" name="username" type="text" id="username" autofocus required
-                                placeholder="Digite seu username" maxlength="10" size="10">
+                        <div class="col">
+                            <label>Usuário</label>
+                            <input class="form-control" name="username" type="text" id="usuario" autofocus required
+                                placeholder="Digite seu username" size="10">
                         </div>
                     </div>
 
@@ -48,10 +48,10 @@
 
                     <div class="form-row">
 
-                        <div class="col-2">
+                        <div class="col">
                             <label>Senha</label>
-                            <input class="form-control" name="senha" type="password" id="username" autofocus required
-                                placeholder="Digite sua senha" maxlength="10" size="10">
+                            <input class="form-control" name="senha" type="password" id="senha" autofocus required
+                                placeholder="Digite sua senha" minlength="6" size="10">
                         </div>
                     </div>
                 </div>
