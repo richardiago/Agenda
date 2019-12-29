@@ -1,5 +1,5 @@
 body {
-  background-color: #e5e5e5;
+  background-color: #73b3b8;
   
 }
 
@@ -56,9 +56,14 @@ body {
   border-radius: 15px;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 640px;
+  
 }
 
 .box.login {
+  width: 400px;
+}
+
+.box.cadastro {
   width: 400px;
 }
 
