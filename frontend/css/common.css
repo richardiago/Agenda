@@ -1,0 +1,76 @@
+body {
+  background-color: #e5e5e5;
+}
+
+.header {
+  padding: 5px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+#page-title {
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+#botaoCadastrar {
+  margin: 0;
+}
+
+.mensagemDeErro {
+  color: #ff0000;
+  font-style: italic;
+  font-size: small;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.card {
+  background-color: transparent;
+  border-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.card:hover .img-top {
+  display: inline;
+}
+
+.box {
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 640px;
+}
+
+.box.login {
+  width: 400px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.container {
+  max-width: 300px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
