@@ -1,5 +1,6 @@
 package agenda.Agenda.model.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -30,7 +31,7 @@ public class Usuario {
     private String senha;
 
     @OneToMany(mappedBy = "usuario", targetEntity = Contato.class, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<Contato> lista_contatos;
+    private List<Contato> lista_contatos = new ArrayList<>();
 
     public Long getId() {
         return id;
