@@ -8,13 +8,13 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         url: "/home",
         templateUrl: "../view/home.html",
         params: { from: null },
-        controller: "HomeController"
+        controller: "homeController"
     });
 
     $stateProvider.state("login", {
         url: "/login",
         templateUrl: "../view/login.html",
-        controller: "LoginController"
+        controller: "loginController"
     });
 
     $stateProvider.state("cadastroContato", {
