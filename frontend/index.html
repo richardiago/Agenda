@@ -5,29 +5,34 @@
     <title>Agenda</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Bootstrap JS -->
-    <script src="../js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
 
     <!-- Angular JS -->
-    <script src="../js/lib/angular.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="https://unpkg.com/@uirouter/angularjs@1.0.22/release/angular-ui-router.min.js"></script>
 
 
     <!-- JQuery JS -->
-    <script src="../js/lib/jquery-3.3.1.min.js"></script>
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
 
     <!-- Nossos CSS -->
-    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/common.css">
 
     <!-- Nossos Scripts -->
-
+    <script src="js/app.js"></script>
+    <script src="js/controllers/buscarContato.js"></script>
+    <script src="js/controllers/cadastroContato.js"></script>
+    <script src="js/controllers/cadastroUsuario.js"></script>
+    <script src="js/controllers/listarContato.js"></script>
 
 </head>
 
 <!-- margem -->
 
-<body class="m-5">
+<body class="m-5" ng-app="agenda">
 
     <!-- Single Page Application -->
     <div ui-view>
