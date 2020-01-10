@@ -4,19 +4,19 @@
     <div class="box">
         <h5>Cadastro de usuário</h5>
         <!-- Formulário -->
-        <form>
+        <form ng-submit="cadastrarUsuario()">
             <div class="form-group">
                 <div class="form-row">
                     <label>Username</label>
-                    <input class="form-control" name="username" type="text" id="username" autofocus required
-                        placeholder="Crie um username" size="10">
+                    <input ng-model="fields.username" class="form-control" name="username" type="text" id="username"
+                        autofocus required placeholder="Crie um username" size="10">
                 </div>
                 <br />
 
                 <div class="form-row">
                     <label>Email</label>
-                    <input class="form-control" name="emailUsuario" type="email" id="emailUsuario" autofocus required
-                        placeholder="Digite seu email" size="10">
+                    <input ng-model="fields.email" class="form-control" name="emailUsuario" type="email"
+                        id="emailUsuario" autofocus required placeholder="Digite seu email" size="10">
 
                 </div>
 
@@ -24,8 +24,8 @@
 
                 <div class="form-row">
                     <label>Senha</label>
-                    <input class="form-control" name="senha" type="password" id="senha" autofocus required
-                        placeholder="Crie uma senha" size="10">
+                    <input ng-model="fields.senha" class="form-control" name="senha" type="password" id="senha"
+                        autofocus required placeholder="Crie uma senha" size="10">
 
                 </div>
 
